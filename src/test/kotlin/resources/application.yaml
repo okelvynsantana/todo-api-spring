@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: todoapi
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/FREEPDB1
+    username: todo_user
+    password: todo_password
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
